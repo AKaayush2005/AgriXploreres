@@ -1,0 +1,2155 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌿 AgriXplorers - Fresh by Nature. Urban by Design.</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <span class="brand-icon">🌿</span>
+                <span class="brand-text">AgriXplorers</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#calendar" class="nav-link">Farm Calendar</a></li>
+                <li><a href="#health" class="nav-link">Health</a></li>
+                <li><a href="#mood" class="nav-link">Mood Food</a></li>
+                <li><a href="#dashboard" class="nav-link">Dashboard</a></li>
+                <li><a href="#credits" class="nav-link">Credits</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">🌿 AgriXplorers</h1>
+                <p class="hero-tagline">Fresh by Nature. Urban by Design.</p>
+                <p class="hero-description">
+                    Bringing farming back to the heart of our cities. From rooftops to balconies, from schools to apartments — Urban Roots empowers communities to grow fresh, sustainable, and mood-boosting food right where they live.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="openLoginModal()">
+                        <i class="fas fa-users"></i>
+                        Join the Community
+                    </button>
+                    <button class="btn btn-secondary" onclick="openUrbanFarmModal()">
+                        <i class="fas fa-seedling"></i>
+                        Start Your Urban Farm
+                    </button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="floating-card">
+                    <img src="https://images.pexels.com/photos/1301856/pexels-photo-1301856.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Urban Farming" class="hero-img">
+                </div>
+            </div>
+        </div>
+        <div class="hero-stats">
+            <div class="stat-item">
+                <div class="stat-number">10K+</div>
+                <div class="stat-label">Urban Farmers</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">500+</div>
+                <div class="stat-label">Community Gardens</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">1M+</div>
+                <div class="stat-label">Plants Grown</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Us</h2>
+                <p class="section-subtitle">Urban Roots is a movement to reconnect city dwellers with farming.</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>We combine community farming spaces, smart hydroponics, AI-powered guidance, and seasonal farm calendars to make urban agriculture simple, fun, and impactful.</p>
+                    <p>✨ Whether you're a child curious about gardening, a busy professional looking for fresh greens, or a family managing health with food — Urban Roots has something for you.</p>
+                </div>
+                <div class="about-features">
+                    <div class="feature-card">
+                        <div class="feature-icon">🌱</div>
+                        <h3>Community Focused</h3>
+                        <p>Building stronger neighborhoods through shared farming experiences</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔬</div>
+                        <h3>Smart Technology</h3>
+                        <p>AI-powered guidance and IoT sensors for optimal growing conditions</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🌍</div>
+                        <h3>Sustainable Future</h3>
+                        <p>Creating eco-friendly cities with reduced carbon footprint</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Comprehensive urban farming solutions designed to fit every space, lifestyle, and community need.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" onclick="openServiceModal('community')">
+                    <div class="service-image-container">
+                        <img src="https://civicwell.org/wp-content/uploads/2013/07/feature-cultivating-community-gardens.jpg" alt="Community Gardens" class="service-image">
+                        <div class="service-image-overlay">
+                            <div class="service-overlay-icon">🌻</div>
+                        </div>
+                    </div>
+                    <div class="service-icon">🌻</div>
+                    <h3>Community Gardens</h3>
+                    <p>Shared Spaces, Shared Harvests</p>
+                    <div class="service-description">
+                        <p>Societies, schools, or public parks converted into mini-farms. Members contribute time/effort and earn digital tokens or green credits based on harvest share.</p>
+                    </div>
+                    <button class="btn btn-outline">Learn More</button>
+                </div>
+
+                <div class="service-card" onclick="openServiceModal('rooftop')">
+                    <div class="service-image-container">
+                        <img src="https://th.bing.com/th/id/R.fc814b7f4e3005ad5a7962b432657740?rik=KgGzFswg8fmt0w&riu=http%3a%2f%2fwww.hiddenvalleyhibiscus.com%2fworld%2fimages%2fbangaloreroof.jpg&ehk=STp8vM3IXWsbiOVC8RA02TBQa%2bs4DZp6NvGhxI4Iia4%3d&risl=&pid=ImgRaw&r=0" alt="Rooftop Farming" class="service-image">
+                        <div class="service-image-overlay">
+                            <div class="service-overlay-icon">🌿</div>
+                        </div>
+                    </div>
+                    <div class="service-icon">🌿</div>
+                    <h3>Rooftop & Apartment Farming</h3>
+                    <p>Turn unused rooftops and balconies into green oases</p>
+                    <div class="service-description">
+                        <p>Grow herbs, vegetables, and microgreens in small spaces. Smart planters & vertical racks maximize yield in compact apartments.</p>
+                    </div>
+                    <button class="btn btn-outline">Learn More</button>
+                </div>
+
+                <div class="service-card" onclick="openServiceModal('hydroponics')">
+                    <div class="service-image-container">
+                        <img src="https://storables.com/wp-content/uploads/2023/07/how-to-make-a-hydroponic-garden-1688565246.jpg" alt="Hydroponics" class="service-image">
+                        <div class="service-image-overlay">
+                            <div class="service-overlay-icon">💧</div>
+                        </div>
+                    </div>
+                    <div class="service-icon">💧</div>
+                    <h3>Urban Hydroponics Kits</h3>
+                    <p>Farming without soil</p>
+                    <div class="service-description">
+                        <p>Simple plug-and-grow hydroponic kits for homes & offices. Water-efficient, space-saving, and chemical-free farming.</p>
+                    </div>
+                    <button class="btn btn-outline">Learn More</button>
+                </div>
+
+                <div class="service-card" onclick="openServiceModal('vertical')">
+                    <div class="service-image-container">
+                        <img src="https://st3.depositphotos.com/7051628/16363/i/450/depositphotos_163631942-stock-photo-vertical-garden-with-pipe-pvc.jpg" alt="Vertical Farming" class="service-image">
+                        <div class="service-image-overlay">
+                            <div class="service-overlay-icon">🏙</div>
+                        </div>
+                    </div>
+                    <div class="service-icon">🏙</div>
+                    <h3>Vertical Farming</h3>
+                    <p>Farming that grows upwards, not outwards</p>
+                    <div class="service-description">
+                        <p>High-yield vertical systems for rooftops, basements, or community centers. Saves 90% water compared to traditional farming.</p>
+                    </div>
+                    <button class="btn btn-outline">Learn More</button>
+                </div>
+
+                <div class="service-card" onclick="openServiceModal('aeroponics')">
+                    <div class="service-image-container">
+                        <img src="https://th.bing.com/th/id/R.26dc0cd58ac1841be5d776c421924877?rik=L7cw3RnX2AqBjw&riu=http%3a%2f%2fcdn.shopify.com%2fs%2ffiles%2f1%2f0579%2f7924%2f0580%2farticles%2fshutterstock_41903677.jpg%3fv%3d1661854557&ehk=yVXnlKg0Za0bfUkErIhFRs8Jqf9Oj%2bKKFoO7%2fibwUMo%3d&risl=&pid=ImgRaw&r=0" alt="Aeroponics" class="service-image">
+                        <div class="service-image-overlay">
+                            <div class="service-overlay-icon">🌬</div>
+                        </div>
+                    </div>
+                    <div class="service-icon">🌬</div>
+                    <h3>Aeroponics: Farming in the Air</h3>
+                    <p>Farming in the air, without soil</p>
+                    <div class="service-description">
+                        <p>Plant roots suspended and nourished with nutrient-rich mist. Saves up to 95% water compared to traditional farming.</p>
+                    </div>
+                    <button class="btn btn-outline">Learn More</button>
+                </div>
+
+                <div class="service-card" onclick="openServiceModal('agripreneurs')">
+                    <div class="service-image-container">
+                        <img src="https://images.pexels.com/photos/4503268/pexels-photo-4503268.jpeg" alt="AgriPreneurs" class="service-image">
+                        <div class="service-image-overlay">
+                            <div class="service-overlay-icon">💼</div>
+                        </div>
+                    </div>
+                    <div class="service-icon">💼</div>
+                    <h3>AgriPreneurs</h3>
+                    <p>Growing Food, Growing Futures</p>
+                    <div class="service-description">
+                        <p>Entrepreneurs of the future, powered by urban farming. Turn community gardens, vertical farms, and aeroponics into businesses.</p>
+                    </div>
+                    <button class="btn btn-outline">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Farmer Calendar Section -->
+    <section id="calendar" class="farmer-calendar">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">🌾 Urban Farming Calendar</h2>
+                <p class="section-subtitle">Grow seasonal crops in pots, rooftop beds, hydroponics, or aeroponics</p>
+            </div>
+            
+            <div class="season-tabs">
+                <button class="season-tab active" onclick="showSeason('summer', event)">🌞 Summer (Mar-Jun)</button>
+                <button class="season-tab" onclick="showSeason('monsoon', event)">🌧 Monsoon (Jul-Sep)</button>
+                <button class="season-tab" onclick="showSeason('winter', event)">❄️ Winter (Oct-Feb)</button>
+                <button class="season-tab" onclick="showSeason('allseason', event)">🌿 All Season</button>
+            </div>
+
+            <div id="summer" class="season-content active">
+                <div class="crops-grid">
+                    <div class="crop-card" onclick="openCropModal('cucumber')">
+                        <div class="crop-carousel">
+                            <div class="carousel-container">
+                                <img src="https://images.pexels.com/photos/2329440/pexels-photo-2329440.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Cucumber" class="crop-image active">
+                                <img src="https://static.vecteezy.com/system/resources/previews/020/662/586/non_2x/field-green-cucumber-plant-for-harvest-on-bed-free-photo.jpg" alt="Cucumber Plant" class="crop-image">
+                                <img src="https://tse2.mm.bing.net/th/id/OIP.ypM8xFFJb2HlZBp2_os10QHaE8?w=1200&h=800&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Cucumber Growing" class="crop-image">
+                            </div>
+                            <div class="carousel-nav">
+                                <button class="carousel-btn prev" onclick="event.stopPropagation(); prevImage(this)">‹</button>
+                                <button class="carousel-btn next" onclick="event.stopPropagation(); nextImage(this)">›</button>
+                            </div>
+                            <div class="carousel-indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                        <div class="crop-info">
+                            <h3>🥒 Cucumber</h3>
+                            <p class="crop-nutrition">Hydrating, Vitamin K</p>
+                            <p class="crop-harvest">Harvest: 50-60 days</p>
+                            <button class="btn btn-guide">Growing Guide</button>
+                        </div>
+                    </div>
+
+                    <div class="crop-card" onclick="openCropModal('Amaranthus')">
+                        <div class="crop-carousel">
+                            <div class="carousel-container">
+                                <img src="https://tse4.mm.bing.net/th/id/OIP.-g6h6jX2lo7YS9PUYJG5MAHaFu?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Chili" class="crop-image active">
+                                <img src="https://c8.alamy.com/comp/RA4M83/red-spinach-in-a-pot-RA4M83.jpg" alt="Chili Plant" class="crop-image">
+                                <img src="https://i.etsystatic.com/18026585/r/il/a4cf87/3125054467/il_fullxfull.3125054467_1gns.jpg" alt="Chili Growing" class="crop-image">
+                            </div>
+                            <div class="carousel-nav">
+                                <button class="carousel-btn prev" onclick="event.stopPropagation(); prevImage(this)">‹</button>
+                                <button class="carousel-btn next" onclick="event.stopPropagation(); nextImage(this)">›</button>
+                            </div>
+                            <div class="carousel-indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                        <div class="crop-info">
+                            <h3>🌿 Amaranthus (Red Spinach)</h3>
+                            <p class="crop-nutrition">Calcium, iron, Vitamin A.</p>
+                            <p class="crop-harvest">Harvest: 25-35 days</p>
+                            <button class="btn btn-guide">Growing Guide</button>
+                        </div>
+                    </div>
+
+                    <div class="crop-card" onclick="openCropModal('tomato')">
+                        <div class="crop-carousel">
+                            <div class="carousel-container">
+                                <img src="https://images.pexels.com/photos/1327838/pexels-photo-1327838.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Tomato" class="crop-image active">
+                                <img src="https://tse2.mm.bing.net/th/id/OIP.fdL4v4f76kjC4MS04Yf0cAHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Tomato Plant" class="crop-image">
+                                <img src="https://th.bing.com/th/id/OIP.NDmQKUAYZiBL5Vb14HNM1QHaEK?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Tomato Growing" class="crop-image">
+                            </div>
+                            <div class="carousel-nav">
+                                <button class="carousel-btn prev" onclick="event.stopPropagation(); prevImage(this)">‹</button>
+                                <button class="carousel-btn next" onclick="event.stopPropagation(); nextImage(this)">›</button>
+                            </div>
+                            <div class="carousel-indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                        <div class="crop-info">
+                            <h3>🍅 Tomato</h3>
+                            <p class="crop-nutrition">Vitamin A, C, Lycopene</p>
+                            <p class="crop-harvest">Harvest: 70-80 days</p>
+                            <button class="btn btn-guide">Growing Guide</button>
+                        </div>
+                    </div>
+
+                    <div class="crop-card" onclick="openCropModal('brinjal')">
+                        <div class="crop-carousel">
+                            <div class="carousel-container">
+                                <img src="https://housing.com/news/wp-content/uploads/2022/11/brinjal-feature-compressed.jpg" alt="Spinach" class="crop-image active">
+                                <img src="https://thumbs.dreamstime.com/b/brinjal-plant-overloaded-brinjals-apot-cultivated-india-brinjal-plant-overloaded-brinjals-171097059.jpg" alt="Spinach Plant" class="crop-image">
+                                <img src="https://i.ytimg.com/vi/Xvqt4C28CkA/maxresdefault.jpg" alt="Spinach Growing" class="crop-image">
+                            </div>
+                            <div class="carousel-nav">
+                                <button class="carousel-btn prev" onclick="event.stopPropagation(); prevImage(this)">‹</button>
+                                <button class="carousel-btn next" onclick="event.stopPropagation(); nextImage(this)">›</button>
+                            </div>
+                            <div class="carousel-indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                        <div class="crop-info">
+                            <h3>🍆 Brinjal </h3>
+                            <p class="crop-nutrition">High fiber, aids digestion.</p>
+                            <p class="crop-harvest">Harvest: 90-100 days</p>
+                            <button class="btn btn-guide">Growing Guide</button>
+                        </div>
+                    </div>
+
+                <div class="crop-card" onclick="openCropModal('bottleGourd')">
+                        <div class="crop-carousel">
+                            <div class="carousel-container">
+                                <img src="https://th.bing.com/th/id/OIP.8AhH0v7FEXdY00-KUdVP8wHaGL?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Chili" class="crop-image active">
+                                <img src="https://tse3.mm.bing.net/th/id/OIP.C9Zt0HCNWEv257gQT9YvTwHaHa?w=600&h=600&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Chili Plant" class="crop-image">
+                                <img src="https://i.ytimg.com/vi/CJZ08BMjJpc/maxresdefault.jpg" alt="Chili Growing" class="crop-image">
+                            </div>
+                            <div class="carousel-nav">
+                                <button class="carousel-btn prev" onclick="event.stopPropagation(); prevImage(this)">‹</button>
+                                <button class="carousel-btn next" onclick="event.stopPropagation(); nextImage(this)">›</button>
+                            </div>
+                            <div class="carousel-indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                        <div class="crop-info">
+                            <h3>🥒 Bottle Gourd (Lauki)</h3>
+                            <p class="crop-nutrition">Cooling, good for hydration.</p>
+                            <p class="crop-harvest">Harvest: 60-70 days</p>
+                            <button class="btn btn-guide">Growing Guide</button>
+                        </div>
+                    </div>
+
+                 <div class="crop-card" onclick="openCropModal('okra')">
+                        <div class="crop-carousel">
+                            <div class="carousel-container">
+                                <img src="https://www.agrifarming.in/wp-content/uploads/2018/05/Growing-Ladys-Finger-In-Pots..jpg" alt="Chili" class="crop-image active">
+                                <img src="https://cdn.shopify.com/s/files/1/0555/8363/7660/files/ladyfinger-urban-plants_480x480.webp?v=1695284422" alt="Chili Plant" class="crop-image">
+                                <img src="https://tse2.mm.bing.net/th/id/OIP.XrvravyNTlRnG2JqU01kewHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Chili Growing" class="crop-image">
+                            </div>
+                            <div class="carousel-nav">
+                                <button class="carousel-btn prev" onclick="event.stopPropagation(); prevImage(this)">‹</button>
+                                <button class="carousel-btn next" onclick="event.stopPropagation(); nextImage(this)">›</button>
+                            </div>
+                            <div class="carousel-indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                        <div class="crop-info">
+                            <h3>🌿Ladyfinger (Bhindi)</h3>
+                            <p class="crop-nutrition">Vitamin C, fiber.</p>
+                            <p class="crop-harvest">Harvest: 50-60 days</p>
+                            <button class="btn btn-guide">Growing Guide</button>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <div id="monsoon" class="season-content">
+                <div class="crops-grid">
+                    <div class="crop-card" onclick="openCropModal('springOnion')">
+                        <div class="crop-carousel">
+                            <div class="carousel-container">
+                                <img src="https://th.bing.com/th/id/R.0cfb749faeaeda386345130c1aab5fd1?rik=h%2brk2fSbp3ccsQ&riu=http%3a%2f%2fstatic1.squarespace.com%2fstatic%2f61d88f5cc75725423dd78068%2f61d88f64c75725423dd7822a%2f6441a61974f103016ab175e5%2f1682437397940%2fSpring%2bonion%2bwhite%2band%2bred%2bgrid.jpg%3fformat%3d1500w&ehk=S%2bMYOZtrwgibxrTQbKyvrY394ghFB3AiD5qYqjTVhdY%3d&risl=&pid=ImgRaw&r=0" alt="Corn" class="crop-image active">
+                                <img src="https://noobcook.com/wp-content/uploads/2011/02/springonions.jpg" alt="Corn Plant" class="crop-image">
+                                <img src="https://tse4.mm.bing.net/th/id/OIP.8m_L70Wt59O2Us00rQNS9gHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Corn Growing" class="crop-image">
+                            </div>
+                            <div class="carousel-nav">
+                                <button class="carousel-btn prev" onclick="event.stopPropagation(); prevImage(this)">‹</button>
+                                <button class="carousel-btn next" onclick="event.stopPropagation(); nextImage(this)">›</button>
+                            </div>
+                            <div class="carousel-indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                        <div class="crop-info">
+                            <h3>🌱 Spring Onion </h3>
+                            <p class="crop-nutrition">Vitamin K, Vitamin C</p>
+                            <p class="crop-harvest">Harvest: 30-40 days</p>
+                            <button class="btn btn-guide">Growing Guide</button>
+                        </div>
+                    </div>
+
+                    <div class="crop-card" onclick="openCropModal('pumpkin')">
+                        <div class="crop-carousel">
+                            <div class="carousel-container">
+                                <img src="https://tse2.mm.bing.net/th/id/OIP.gizsuDFkwAzMqdjE5SkAAAHaE7?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Bottle Gourd" class="crop-image active">
+                                <img src="https://tse3.mm.bing.net/th/id/OIP.ioXR28-eNrpA2WY-LXD7oAHaFj?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Bottle Gourd Plant" class="crop-image">
+                                <img src="https://c8.alamy.com/comp/DNRHXM/pumpkin-plant-DNRHXM.jpg" alt="Bottle Gourd Growing" class="crop-image">
+                            </div>
+                            <div class="carousel-nav">
+                                <button class="carousel-btn prev" onclick="event.stopPropagation(); prevImage(this)">‹</button>
+                                <button class="carousel-btn next" onclick="event.stopPropagation(); nextImage(this)">›</button>
+                            </div>
+                            <div class="carousel-indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                        <div class="crop-info">
+                            <h3>🎃 Pumpkin </h3>
+                            <p class="crop-nutrition">Vitamin A, potassium, fiber</p>
+                            <p class="crop-harvest">Harvest: 80-90 days</p>
+                            <button class="btn btn-guide">Growing Guide</button>
+                        </div>
+                    </div>
+
+<div class="crop-card" onclick="openCropModal('colocasia')">
+                        <div class="crop-carousel">
+                            <div class="carousel-container">
+                                <img src="https://tse4.mm.bing.net/th/id/OIP.78qDcp0PORPBx0mymzhlagHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Bottle Gourd" class="crop-image active">
+                                <img src="https://i.ytimg.com/vi/7SbIUMY32Uw/maxresdefault.jpg" alt="Bottle Gourd Plant" class="crop-image">
+                                <img src="https://i.ytimg.com/vi/h5YCIEp18KE/maxresdefault.jpg" alt="Bottle Gourd Growing" class="crop-image">
+                            </div>
+                            <div class="carousel-nav">
+                                <button class="carousel-btn prev" onclick="event.stopPropagation(); prevImage(this)">‹</button>
+                                <button class="carousel-btn next" onclick="event.stopPropagation(); nextImage(this)">›</button>
+                            </div>
+                            <div class="carousel-indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                        <div class="crop-info">
+                            <h3>🍃 Colocasia (Arbi)</h3>
+                            <p class="crop-nutrition">Good carbs, Vitamin E, iron.</p>
+                            <p class="crop-harvest">Harvest: 90-100 days</p>
+                            <button class="btn btn-guide">Growing Guide</button>
+                        </div>
+                    </div>
+
+<div class="crop-card" onclick="openCropModal('bitterGourd')">
+                        <div class="crop-carousel">
+                            <div class="carousel-container">
+                                <img src="https://tse4.mm.bing.net/th/id/OIP.e5gBrPaDC9CIlXYxF1827QHaFj?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Bottle Gourd" class="crop-image active">
+                                <img src="https://th.bing.com/th/id/OIP.uQKeYukJJyjiQdDPwAJh7AHaEK?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Bottle Gourd Plant" class="crop-image">
+                                <img src="https://th.bing.com/th/id/OIP.ZgvJiYJRa3tTbAjIFa_J0QHaE7?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Bottle Gourd Growing" class="crop-image">
+                            </div>
+                            <div class="carousel-nav">
+                                <button class="carousel-btn prev" onclick="event.stopPropagation(); prevImage(this)">‹</button>
+                                <button class="carousel-btn next" onclick="event.stopPropagation(); nextImage(this)">›</button>
+                            </div>
+                            <div class="carousel-indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                        <div class="crop-info">
+                            <h3>🥒 Bitter Gourd (Karela)</h3>
+                            <p class="crop-nutrition">Controls blood sugar, Vitamin C</p>
+                            <p class="crop-harvest">Harvest: 60-70 days</p>
+                            <button class="btn btn-guide">Growing Guide</button>
+                        </div>
+                    </div>
+
+<div class="crop-card" onclick="openCropModal('ridgeGourd')">
+                        <div class="crop-carousel">
+                            <div class="carousel-container">
+                                <img src="https://skyseeds.pk/wp-content/uploads/2024/04/7dd7600ba9a33cba79bc78d735b22bb0-384-741725-170222121940492.jpg" alt="Bottle Gourd" class="crop-image active">
+                                <img src="https://th.bing.com/th/id/OIP.hcHuGer_zX2_ATiisYrt0AHaEK?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Bottle Gourd Plant" class="crop-image">
+                                <img src="https://i.ytimg.com/vi/EyMc3cWD3cY/maxresdefault.jpg" alt="Bottle Gourd Growing" class="crop-image">
+                            </div>
+                            <div class="carousel-nav">
+                                <button class="carousel-btn prev" onclick="event.stopPropagation(); prevImage(this)">‹</button>
+                                <button class="carousel-btn next" onclick="event.stopPropagation(); nextImage(this)">›</button>
+                            </div>
+                            <div class="carousel-indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                        <div class="crop-info">
+                            <h3>🥒 Ridge Gourd (Turai)</h3>
+                            <p class="crop-nutrition">Light, digestion-friendly, Vitamin C.</p>
+                            <p class="crop-harvest">Harvest: 55-65 days</p>
+                            <button class="btn btn-guide">Growing Guide</button>
+                        </div>
+                    </div>
+
+                    <div class="crop-card" onclick="openCropModal('garlic')">
+                        <div class="crop-carousel">
+                            <div class="carousel-container">
+                                <img src="https://tse1.explicit.bing.net/th/id/OIP.J8V_Q-O_c9FQHOpcbmUnPgHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Bottle Gourd" class="crop-image active">
+                                <img src="https://th.bing.com/th/id/OIP.T7-xVCnI-UWmz5ipjuPy4AHaFp?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Bottle Gourd Plant" class="crop-image">
+                                <img src="https://th.bing.com/th/id/OIP.mbW52NegYUvqOfhXU7vlaAHaE9?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Bottle Gourd Growing" class="crop-image">
+                            </div>
+                            <div class="carousel-nav">
+                                <button class="carousel-btn prev" onclick="event.stopPropagation(); prevImage(this)">‹</button>
+                                <button class="carousel-btn next" onclick="event.stopPropagation(); nextImage(this)">›</button>
+                            </div>
+                            <div class="carousel-indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                        <div class="crop-info">
+                            <h3>🧄 Garlic (Lehsun)</h3>
+                            <p class="crop-nutrition"> Immunity booster, good for heart health.</p>
+                            <p class="crop-harvest">Harvest: 110-120 days</p>
+                            <button class="btn btn-guide">Growing Guide</button>
+                            <button class="btn btn-guide">Growing Guide</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="winter" class="season-content">
+                <div class="crops-grid">
+                    <div class="crop-card" onclick="openCropModal('carrot')">
+                        <div class="crop-carousel">
+                            <div class="carousel-container">
+                                <img src="https://images.pexels.com/photos/143133/pexels-photo-143133.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Carrot" class="crop-image active">
+                                <img src="https://th.bing.com/th/id/OIP.CmXnVYqek-N-itGxNIsMxgHaE8?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Carrot Plant" class="crop-image">
+                                <img src="https://th.bing.com/th/id/OIP.N7nTw38XiXt2815tn_yXVQHaE8?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Carrot Growing" class="crop-image">
+                            </div>
+                            <div class="carousel-nav">
+                                <button class="carousel-btn prev" onclick="event.stopPropagation(); prevImage(this)">‹</button>
+                                <button class="carousel-btn next" onclick="event.stopPropagation(); nextImage(this)">›</button>
+                            </div>
+                            <div class="carousel-indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                        <div class="crop-info">
+                            <h3>🥕 Carrot</h3>
+                            <p class="crop-nutrition">Vitamin A, eye health</p>
+                            <p class="crop-harvest">Harvest: 80-100 days</p>
+                            <button class="btn btn-guide">Growing Guide</button>
+                        </div>
+                    </div>
+
+                    <div class="crop-card" onclick="openCropModal(' spinach')">
+                        <div class="crop-carousel">
+                            <div class="carousel-container">
+                                 <img src="https://th.bing.com/th/id/OIP.MIhh6wGi3kXh6m0sAzOhhAHaIl?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Spinach" class="crop-image active">
+                                <img src="https://th.bing.com/th/id/R.39d2f465fcf9e9d81f7aeea62c39fb37?rik=a6zm20OqxgZPpQ&riu=http%3a%2f%2fwww.quiet-corner.com%2fwp-content%2fuploads%2f2017%2f02%2fspinach.jpg&ehk=EWK4pIexlSgKOzgjyV7WWtf06FtlUaxgKiml5XFxNHA%3d&risl=&pid=ImgRaw&r=0" alt="Spinach Plant" class="crop-image">
+                                <img src="https://i.ytimg.com/vi/a9qF7m8a8jA/maxresdefault.jpg" alt="Spinach Growing" class="crop-image">
+                            </div>
+                            <div class="carousel-nav">
+                                <button class="carousel-btn prev" onclick="event.stopPropagation(); prevImage(this)">‹</button>
+                                <button class="carousel-btn next" onclick="event.stopPropagation(); nextImage(this)">›</button>
+                            </div>
+                            <div class="carousel-indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                        <div class="crop-info">
+                            <h3>🥬 Spinach</h3>
+                            <p class="crop-nutrition">: Iron, folate, Vitamin C.</p>
+                            <p class="crop-harvest">Harvest:30-40days</p>
+                            <button class="btn btn-guide">Growing Guide</button>
+                        </div>
+                    </div>
+
+
+                    <div class="crop-card" onclick="openCropModal('cauliflower')">
+                        <div class="crop-carousel">
+                            <div class="carousel-container">
+                                <img src="https://tse2.mm.bing.net/th/id/OIP.xd5Dl4QWwH7BNT3Ri8lA8gHaFC?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Chili" class="crop-image active">
+                                <img src="https://i.ytimg.com/vi/lQZVMQklZH4/maxresdefault.jpg" alt="Chili Plant" class="crop-image">
+                                <img src="https://tse3.mm.bing.net/th/id/OIP.m-ZkZkJQJs_OBpKCZqCKfAHaG6?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Chili Growing" class="crop-image">
+                            </div>
+                            <div class="carousel-nav">
+                                <button class="carousel-btn prev" onclick="event.stopPropagation(); prevImage(this)">‹</button>
+                                <button class="carousel-btn next" onclick="event.stopPropagation(); nextImage(this)">›</button>
+                            </div>
+                            <div class="carousel-indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                        <div class="crop-info">
+                            <h3>🥦 Cauliflower </h3>
+                            <p class="crop-nutrition"> Rich in Vitamin C & K</p>
+                            <p class="crop-harvest">Harvest: 90-120 days</p>
+                            <button class="btn btn-guide">Growing Guide</button>
+                        </div>
+                    </div>
+
+
+                    <div class="crop-card" onclick="openCropModal('peas')">
+                        <div class="crop-carousel">
+                            <div class="carousel-container">
+                                <img src="https://media.istockphoto.com/id/155431404/photo/green-pea.jpg?b=1&s=170667a&w=0&k=20&c=j5RxJVmuGbIY4i2fwi8audM4dVJOjhgTXWLuczTQpBU=" alt="Bottle Gourd" class="crop-image active">
+                                <img src="https://tse3.mm.bing.net/th/id/OIP.9xs3e_46_5EtNVranPpCEQHaI0?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Bottle Gourd Plant" class="crop-image">
+                                <img src="https://tse1.mm.bing.net/th/id/OIP.ECH7G2bs0cQAvlZH1fuz5wHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Bottle Gourd Growing" class="crop-image">
+                            </div>
+                            <div class="carousel-nav">
+                                <button class="carousel-btn prev" onclick="event.stopPropagation(); prevImage(this)">‹</button>
+                                <button class="carousel-btn next" onclick="event.stopPropagation(); nextImage(this)">›</button>
+                            </div>
+                            <div class="carousel-indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                        <div class="crop-info">
+                            <h3>🌿 Peas (Matar)</h3>
+                            <p class="crop-nutrition">Protein, Vitamin B & C.</p>
+                            <p class="crop-harvest">Harvest: 60-70 days</p>
+                            <button class="btn btn-guide">Growing Guide</button>
+                        </div>
+                    </div>
+
+                    <div class="crop-card" onclick="openCropModal('fenugreek')">
+                        <div class="crop-carousel">
+                            <div class="carousel-container">
+                                <img src="https://th.bing.com/th/id/OIP.xY0ZPOT6_iF1Tol_Oma7LwHaHa?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Bottle Gourd" class="crop-image active">
+                                <img src="https://tse4.mm.bing.net/th/id/OIP.C9z6an2FHl_ujbIB3EpLBQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Bottle Gourd Plant" class="crop-image">
+                                <img src="https://th.bing.com/th/id/OIP.IOYDKRptuEvw1ZX3cGiVWgHaE7?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Bottle Gourd Growing" class="crop-image">
+                            </div>
+                            <div class="carousel-nav">
+                                <button class="carousel-btn prev" onclick="event.stopPropagation(); prevImage(this)">‹</button>
+                                <button class="carousel-btn next" onclick="event.stopPropagation(); nextImage(this)">›</button>
+                            </div>
+                            <div class="carousel-indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                        <div class="crop-info">
+                            <h3>🌿 Fenugreek (Methi)</h3>
+                            <p class="crop-nutrition">Cooling, weight-loss friendly</p>
+                            <p class="crop-harvest">Harvest: 20-25 days</p>
+                            <button class="btn btn-guide">Growing Guide</button>
+                        </div> 
+                    </div>
+
+<div class="crop-card" onclick="openCropModal(' radish')">
+                        <div class="crop-carousel">
+                            <div class="carousel-container">
+                                <img src="https://tse4.mm.bing.net/th/id/OIP.vvqw9I3LqnAveq2zD3rMfQHaE7?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Bottle Gourd" class="crop-image active">
+                                <img src="https://th.bing.com/th/id/OIP.usHGfd6Yi7GZCXnBWQDpEwHaEK?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Bottle Gourd Plant" class="crop-image">
+                                <img src="https://th.bing.com/th/id/OIP.MBeFCPna1wryIaJ-YS3jXwHaFj?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Bottle Gourd Growing" class="crop-image">
+                            </div>
+                            <div class="carousel-nav">
+                                <button class="carousel-btn prev" onclick="event.stopPropagation(); prevImage(this)">‹</button>
+                                <button class="carousel-btn next" onclick="event.stopPropagation(); nextImage(this)">›</button>
+                            </div>
+                            <div class="carousel-indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                        <div class="crop-info">
+                            <h3>🥬 Radish </h3>
+                            <p class="crop-nutrition">Vitamin C, good for digestion.</p>
+                            <p class="crop-harvest">Harvest: 40-50 days</p>
+                            <button class="btn btn-guide">Growing Guide</button>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div id="allseason" class="season-content">
+                <div class="crops-grid">
+                    <div class="crop-card" onclick="openCropModal('coriander')">
+                        <div class="crop-carousel">
+                            <div class="carousel-container">
+                                <img src="https://cdn.shopify.com/s/files/1/1380/2059/products/Coriander.jpg?v=1480318423" alt="Coriander" class="crop-image active">
+                                <img src="https://www.realestate.com.au/blog/images/1885x1414-fit,progressive/2018/03/26113239/growing-coriander-in-pots_2000x1500.jpg" alt="Coriander Plant" class="crop-image">
+                                <img src="https://live-production.wcms.abc-cdn.net.au/ae296b42cdc4953d03c0a26e19dd306e?impolicy=wcms_crop_resize&cropH=576&cropW=1024&xPos=0&yPos=0&width=862&height=485" alt="Coriander Growing" class="crop-image">
+                            </div>
+                            <div class="carousel-nav">
+                                <button class="carousel-btn prev" onclick="event.stopPropagation(); prevImage(this)">‹</button>
+                                <button class="carousel-btn next" onclick="event.stopPropagation(); nextImage(this)">›</button>
+                            </div>
+                            <div class="carousel-indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                        <div class="crop-info">
+                            <h3>🌿 Coriander</h3>
+                            <p class="crop-nutrition">Vitamin C, antioxidants</p>
+                            <p class="crop-harvest">Harvest: 25-30 days</p>
+                            <button class="btn btn-guide">Growing Guide</button>
+                        </div>
+                    </div>
+
+                    <div class="crop-card" onclick="openCropModal('mint')">
+                        <div class="crop-carousel">
+                            <div class="carousel-container">
+                                <img src="https://plantsinformation.com/wp-content/uploads/mint-plants-information.jpg" alt="Mint" class="crop-image active">
+                                <img src="https://tse4.mm.bing.net/th/id/OIP.huaNnAphQ2H4ayuZIRIxiQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Mint Plant" class="crop-image">
+                                <img src="https://assets.marthastewart.com/styles/wmax-1500/d19/med102917_0507_mint/med102917_0507_mint_sq.jpg?itok=AKEqH1Mb" alt="Mint Growing" class="crop-image">
+                            </div>
+                            <div class="carousel-nav">
+                                <button class="carousel-btn prev" onclick="event.stopPropagation(); prevImage(this)">‹</button>
+                                <button class="carousel-btn next" onclick="event.stopPropagation(); nextImage(this)">›</button>
+                            </div>
+                            <div class="carousel-indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                        <div class="crop-info">
+                            <h3>🌿 Mint</h3>
+                            <p class="crop-nutrition">Cooling, helps digestion</p>
+                            <p class="crop-harvest">Harvest: 30-40 days</p>
+                            <button class="btn btn-guide">Growing Guide</button>
+                        </div>
+                    </div>
+
+<div class="crop-card" onclick="openCropModal('lettuce')">
+                        <div class="crop-carousel">
+                            <div class="carousel-container">
+                                <img src="https://tse2.mm.bing.net/th/id/OIP.iO843ZpZ8NLXmFL82KTm_QHaGQ?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Bottle Gourd" class="crop-image active">
+                                <img src="https://thumbs.dreamstime.com/b/grow-lettuce-pot-plant-lettuce-container-grow-terrace-291240324.jpg" alt="Bottle Gourd Plant" class="crop-image">
+                                <img src="https://th.bing.com/th/id/OIP.kAzNwQyPA5usBydS8D9JWQHaE8?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Bottle Gourd Growing" class="crop-image">
+                            </div>
+                            <div class="carousel-nav">
+                                <button class="carousel-btn prev" onclick="event.stopPropagation(); prevImage(this)">‹</button>
+                                <button class="carousel-btn next" onclick="event.stopPropagation(); nextImage(this)">›</button>
+                            </div>
+                            <div class="carousel-indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                        <div class="crop-info">
+                            <h3>🥬 Lettuce</h3>
+                            <p class="crop-nutrition">Hydrating, Vitamin A</p>
+                            <p class="crop-harvest">Harvest: 30-40 days</p>
+                            <button class="btn btn-guide">Growing Guide</button>
+                        </div>
+                    </div>
+
+                    <div class="crop-card" onclick="openCropModal('curryLeaves')">
+                        <div class="crop-carousel">
+                            <div class="carousel-container">
+                                <img src="https://spiceography.com/wp-content/uploads/2019/12/cooking-with-curry-leaves-1024x684.jpg" alt="Bottle Gourd" class="crop-image active">
+                                <img src="https://www.agrifarming.in/wp-content/uploads/2018/03/Growing-Curry-Leaf-Plants-In-Pots.-e1523107064721.jpg" alt="Bottle Gourd Plant" class="crop-image">
+                                <img src="https://tse4.mm.bing.net/th/id/OIP.IEsQV6DZGA2Uj9y_guF-9wHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Bottle Gourd Growing" class="crop-image">
+                            </div>
+                            <div class="carousel-nav">
+                                <button class="carousel-btn prev" onclick="event.stopPropagation(); prevImage(this)">‹</button>
+                                <button class="carousel-btn next" onclick="event.stopPropagation(); nextImage(this)">›</button>
+                            </div>
+                            <div class="carousel-indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                        <div class="crop-info">
+                            <h3>🌿 Curry Leaves (Kadi Patta)</h3>
+                            <p class="crop-nutrition">Vitamin A, calcium, aids digestion.</p>
+                            <p class="crop-harvest">Harvest: 60-70 days</p>
+                            <button class="btn btn-guide">Growing Guide</button>
+                        </div>
+                    </div>
+
+                    <div class="crop-card" onclick="openCropModal('aloeVera')">
+                        <div class="crop-carousel">
+                            <div class="carousel-container">
+                                <img src="https://th.bing.com/th/id/OIP._hupxapwrnb4wlVQGOezYwHaE8?w=286&h=190&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Bottle Gourd" class="crop-image active">
+                                <img src="https://tse3.mm.bing.net/th/id/OIP.J-d27LJp6aCdHIUPDKvgXwHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Bottle Gourd Plant" class="crop-image">
+                                <img src="https://tse3.mm.bing.net/th/id/OIP.kzpdkyonFC2AYEg4Lzo1xgHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Bottle Gourd Growing" class="crop-image">
+                            </div>
+                            <div class="carousel-nav">
+                                <button class="carousel-btn prev" onclick="event.stopPropagation(); prevImage(this)">‹</button>
+                                <button class="carousel-btn next" onclick="event.stopPropagation(); nextImage(this)">›</button>
+                            </div>
+                            <div class="carousel-indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                        <div class="crop-info">
+                            <h3>🌱 Aloe Vera</h3>
+                            <p class="crop-nutrition"> Healing, skin care, digestion.</p>
+                            <p class="crop-harvest">Harvest: 6-8 months</p>
+                            <button class="btn btn-guide">Growing Guide</button>
+                        </div>
+                    </div>
+
+                    <div class="crop-card" onclick="openCropModal('chilli')">
+                        <div class="crop-carousel">
+                            <div class="carousel-container">
+                               <img src="https://static.tnfoodie.in/photo/84145761.cms" alt="Chili" class="crop-image active">
+                                <img src="https://tse3.mm.bing.net/th/id/OIP.WEj7eu4T7aTpaPHLy4aYNAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Chili Plant" class="crop-image">
+                                <img src="https://image.freepik.com/free-photo/green-chili-pepper-plant-field-agriculture-garden_1627-68.jpg" alt="Chili Growing" class="crop-image">
+                            </div>
+                            <div class="carousel-nav">
+                                <button class="carousel-btn prev" onclick="event.stopPropagation(); prevImage(this)">‹</button>
+                                <button class="carousel-btn next" onclick="event.stopPropagation(); nextImage(this)">›</button>
+                            </div>
+                            <div class="carousel-indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                        <div class="crop-info">
+                            <h3>🌶️ Chilli </h3>
+                            <p class="crop-nutrition">Vitamin C, antioxidants</p>
+                            <p class="crop-harvest">Harvest: 80-90 days</p>
+                            <button class="btn btn-guide">Growing Guide</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Health Solutions Section -->
+    <section id="health" class="health-solutions">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">🌱 Health Problems & Home-Grown Crop Solutions</h2>
+                <p class="section-subtitle">Grow your medicine in your garden - natural solutions for common health issues</p>
+            </div>
+            
+            <div class="health-grid">
+                <div class="health-card">
+                    <div class="health-icon">🌿</div>
+                    <h3>Gas, Indigestion & Acidity</h3>
+                    <p class="health-cause">Irregular eating, oily food, stress</p>
+                    
+                    <div class="health-carousel">
+                        <div class="carousel-container">
+                            <img src="https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/nutrition-eno/en_IN/all-about-acidity/is-it/desktop/is-it-acidity.png?auto=format" alt="Tulsi for bloating" class="health-image">
+                            <img src="https://media.istockphoto.com/photos/mint-leaf-close-up-picture-id612384340?k=20&m=612384340&s=612x612&w=0&h=Wu9-oTgf6CL-OJf_tD_ftOiD8n_MaEr4UjttmhylgsU=" alt="Mint for digestion" class="health-image active">
+                            <img src="https://i0.wp.com/cdn-prod.medicalnewstoday.com/content/images/articles/277/277627/bunch-of-fresh-coriander-or-cilantro-on-a-wooden-table.jpg?w=1155&h=1444" alt="Coriander for cooling" class="health-image">
+                          </div>
+                        <div class="carousel-nav">
+                            <button class="carousel-btn prev" onclick="prevHealthImage(this)">‹</button>
+                            <button class="carousel-btn next" onclick="nextHealthImage(this)">›</button>
+                        </div>
+                        <div class="carousel-indicators">
+                            <span class="indicator active"></span>
+                            <span class="indicator"></span>
+                            <span class="indicator"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="health-crops">
+                        <div class="crop-tag">🌿 Mint - relieves indigestion</div>
+                        <div class="crop-tag">🌿 Coriander - cools stomach</div>
+                        <div class="crop-tag">🌿 Tulsi - reduces bloating</div>
+                    </div>
+                    <p class="health-tip">💡 Place mint & coriander pots near kitchen window</p>
+                </div>
+
+                <div class="health-card">
+                    <div class="health-icon">🩺</div>
+                    <h3>Diabetes / High Sugar Levels</h3>
+                    <p class="health-cause">Low activity + high sugar diet</p>
+                    
+                    <div class="health-carousel">
+                        <div class="carousel-container">
+                            <img src="https://tse3.mm.bing.net/th/id/OIP.wlZz4dnv_LOP4iccx-0foAHaE5?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Bitter Gourd" class="health-image active">
+                            <img src="https://tse1.mm.bing.net/th/id/OIP.-8YhLpv5hsLFmEtH4EZy4gHaFR?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Spinach" class="health-image">
+                            <img src="https://specialtyproduce.com/sppics/11512.png" alt="Fenugreek" class="health-image">
+                        </div>
+                        <div class="carousel-nav">
+                            <button class="carousel-btn prev" onclick="prevHealthImage(this)">‹</button>
+                            <button class="carousel-btn next" onclick="nextHealthImage(this)">›</button>
+                        </div>
+                        <div class="carousel-indicators">
+                            <span class="indicator active"></span>
+                            <span class="indicator"></span>
+                            <span class="indicator"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="health-crops">
+                        <div class="crop-tag">🍃 Bitter Gourd - lowers sugar</div>
+                        <div class="crop-tag">🍃 Fenugreek - balances sugar</div>
+                        <div class="crop-tag">🍃 Spinach - low glycemic</div>
+                    </div>
+                </div>
+
+                <div class="health-card">
+                    <div class="health-icon">❤️</div>
+                    <h3>High Blood Pressure</h3>
+                    <p class="health-cause">Too much salt, stress, unhealthy lifestyle</p>
+                    
+                    <div class="health-carousel">
+                        <div class="carousel-container">
+                            <img src="https://i.cdn.newsbytesapp.com/images/l98220230830073600.jpeg" alt="Tomatoes" class="health-image active">
+                            <img src="https://tse4.mm.bing.net/th/id/OIP.ya0Qv4RDc-cNNXsg0UKOQgHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Cucumber" class="health-image">
+                            <img src="https://tse3.mm.bing.net/th/id/OIP.MIhh6wGi3kXh6m0sAzOhhAHaIl?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Spinach" class="health-image">
+                        </div>
+                        <div class="carousel-nav">
+                            <button class="carousel-btn prev" onclick="prevHealthImage(this)">‹</button>
+                            <button class="carousel-btn next" onclick="nextHealthImage(this)">›</button>
+                        </div>
+                        <div class="carousel-indicators">
+                            <span class="indicator active"></span>
+                            <span class="indicator"></span>
+                            <span class="indicator"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="health-crops">
+                        <div class="crop-tag">🍅 Tomatoes - potassium-rich</div>
+                        <div class="crop-tag">🥒 Cucumber - hydrating</div>
+                        <div class="crop-tag">🍃 Spinach - heart healthy</div>
+                    </div>
+                </div>
+
+                <div class="health-card">
+                    <div class="health-icon">⚖️</div>
+                    <h3>Obesity / Weight Gain</h3>
+                    <p class="health-cause">Overeating, junk food, low activity</p>
+                    
+                    <div class="health-carousel">
+                        <div class="carousel-container">
+                            <img src="https://tse3.mm.bing.net/th/id/OIP.rKnT5gkEIO_BNvcEOhQhsgHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Cucumber" class="health-image active">
+                            <img src="https://tse2.mm.bing.net/th/id/OIP.SB4tWShfZk6vPbLeXEVFxAHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Tomatoes" class="health-image">
+                            <img src="https://th.bing.com/th/id/R.f3356c81175829ba0f88db98b3fc2895?rik=iAEMF5sKCf8JXw&riu=http%3a%2f%2fwww.accidentinjurylawyerblog.com%2ffiles%2f2011%2f10%2flettuce.jpg&ehk=otVhGaz6UkOdExbowIhKiZ2QrzWJniOEABJ%2bnmYPAmo%3d&risl=1&pid=ImgRaw&r=0" alt="Lettuce" class="health-image">
+                        </div>
+                        <div class="carousel-nav">
+                            <button class="carousel-btn prev" onclick="prevHealthImage(this)">‹</button>
+                            <button class="carousel-btn next" onclick="nextHealthImage(this)">›</button>
+                        </div>
+                        <div class="carousel-indicators">
+                            <span class="indicator active"></span>
+                            <span class="indicator"></span>
+                            <span class="indicator"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="health-crops">
+                        <div class="crop-tag">🥒 Cucumber - low calorie</div>
+                        <div class="crop-tag">🍅 Tomatoes - antioxidant</div>
+                        <div class="crop-tag">🍃 Lettuce - weight loss salads</div>
+                    </div>
+                </div>
+
+                <div class="health-card">
+                    <div class="health-icon">🛡️</div>
+                    <h3>Weak Immunity</h3>
+                    <p class="health-cause">Pollution, weak nutrition, low vitamin intake</p>
+                    
+                    <div class="health-carousel">
+                        <div class="carousel-container">
+                            <img src="https://www.patriciabannan.com/uploads/2023/10/5-signs-weak-immune-system.png" alt="Tulsi" class="health-image active">
+                            <img src="https://manthanhub.com/wp-content/uploads/2022/05/image-1.png" alt="Ginger" class="health-image">
+                            <img src="https://th.bing.com/th/id/OIP.-UCZLuvZIFPl1lRPqEHqVAHaD8?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Lemon" class="health-image">
+                        </div>
+                        <div class="carousel-nav">
+                            <button class="carousel-btn prev" onclick="prevHealthImage(this)">‹</button>
+                            <button class="carousel-btn next" onclick="nextHealthImage(this)">›</button>
+                        </div>
+                        <div class="carousel-indicators">
+                            <span class="indicator active"></span>
+                            <span class="indicator"></span>
+                            <span class="indicator"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="health-crops">
+                        <div class="crop-tag">🌿 Tulsi - infection fighter</div>
+                        <div class="crop-tag">🌱 Ginger - anti-inflammatory</div>
+                        <div class="crop-tag">🍋 Lemon - Vitamin C</div>
+                    </div>
+                </div>
+
+                <div class="health-card">
+                    <div class="health-icon">🩸</div>
+                    <h3>Anemia / Iron Deficiency</h3>
+                    <p class="health-cause">Lack of iron-rich food, common in women/kids</p>
+                    
+                    <div class="health-carousel">
+                        <div class="carousel-container">
+                            <img src="https://thumbs.dreamstime.com/z/anemia-comparison-difference-normal-levels-hemoglobin-decrease-total-amount-red-blood-cells-close-up-vessel-214380584.jpg" alt="Spinach" class="health-image active">
+                            <img src="https://th.bing.com/th/id/OIP.eUeGuEmhHsegCMFxYLkGqwHaEK?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Fenugreek" class="health-image">
+                            <img src="https://lettuceinfo.org/wp-content/uploads/2020/09/Spinach.jpg" alt="Beetroot" class="health-image">
+                        </div>
+                        <div class="carousel-nav">
+                            <button class="carousel-btn prev" onclick="prevHealthImage(this)">‹</button>
+                            <button class="carousel-btn next" onclick="nextHealthImage(this)">›</button>
+                        </div>
+                        <div class="carousel-indicators">
+                            <span class="indicator active"></span>
+                            <span class="indicator"></span>
+                            <span class="indicator"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="health-crops">
+                        <div class="crop-tag">🍃 Spinach - iron source</div>
+                        <div class="crop-tag">🍃 Fenugreek - improves hemoglobin</div>
+                        <div class="crop-tag">🍠 Beetroot - blood booster</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+  
+    <!-- Mood Food Section -->
+<section id="mood" class="mood-food">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">🌱 Good Food = Better Mood</h2>
+            <p class="section-subtitle">Food isn't just nutrition, it's emotion. Eat better based on your mood with foods you can grow at home</p>
+        </div>
+        
+        <div class="mood-grid">
+            <!-- Stress / Anxiety -->
+            <div class="mood-card">
+                <div class="mood-icon">😌</div>
+                <h3>Stress / Anxiety</h3>
+                <p class="mood-nutrients">Key Nutrients: Magnesium, Omega-3, Complex Carbs</p>
+
+                <div class="mood-carousel">
+                    <div class="carousel-container">
+                        <img src="https://i.pinimg.com/736x/28/01/4a/28014af7e6b757e344f7772f1c73e62d.jpg" alt="Stressed" class="mood-image">
+                        <img src="https://images.pexels.com/photos/2255935/pexels-photo-2255935.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Spinach for magnesium" class="mood-image active">
+                        <img src="https://images.pexels.com/photos/1327838/pexels-photo-1327838.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Pumpkin seeds" class="mood-image">
+                        <img src="https://images.pexels.com/photos/1327838/pexels-photo-1327838.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Sweet potato" class="mood-image">
+                    </div>
+                    <div class="carousel-nav">
+                        <button class="carousel-btn prev" onclick="prevMoodImage(this)">‹</button>
+                        <button class="carousel-btn next" onclick="nextMoodImage(this)">›</button>
+                    </div>
+                    <div class="carousel-indicators">
+                        <span class="indicator active"></span>
+                        <span class="indicator"></span>
+                        <span class="indicator"></span>
+                        <span class="indicator"></span>
+                    </div>
+                </div>
+
+                <div class="mood-foods">
+                    <div class="food-tag">🥬 Spinach (Magnesium)</div>
+                    <div class="food-tag">🌱 Pumpkin seeds (Magnesium + Zinc)</div>
+                    <div class="food-tag">🥜 Almonds & Cashews (Calming minerals)</div>
+                    <div class="food-tag">🌾 Flax seeds, Mustard microgreens (Omega-3)</div>
+                    <div class="food-tag">🍠 Sweet potato (Slow-release carbs)</div>
+                    <div class="food-tag">🍵 Tulsi, Chamomile, Mint tea (Relaxing)</div>
+                    <div class="food-tag">🥣 Curd, Buttermilk, Idli/Dosa (Probiotics)</div>
+                </div>
+                <p class="mood-avoid">⚡ Avoid: excess chai/coffee, fried snacks, sugar.</p>
+            </div>
+
+            <!-- Sadness / Low Mood -->
+            <div class="mood-card">
+                <div class="mood-icon">😔</div>
+                <h3>Sadness / Low Mood / Depression</h3>
+                <p class="mood-nutrients">Key Nutrients: Vitamin D, B-Vitamins, Tryptophan, Omega-3</p>
+
+                <div class="mood-carousel">
+                    <div class="carousel-container">
+                        <img src="https://i.pinimg.com/1200x/e2/fc/a2/e2fca2c4f207b0e80d62e6c4558af6be.jpg" alt="sad" class="mood-image active">
+                        <img src="https://images.pexels.com/photos/1327838/pexels-photo-1327838.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Mushrooms for Vitamin D" class="mood-image">
+                        <img src="https://images.pexels.com/photos/1327838/pexels-photo-1327838.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Banana for serotonin" class="mood-image">
+                        <img src="https://images.pexels.com/photos/1327838/pexels-photo-1327838.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Strawberries" class="mood-image">
+                    </div>
+                    <div class="carousel-nav">
+                        <button class="carousel-btn prev" onclick="prevMoodImage(this)">‹</button>
+                        <button class="carousel-btn next" onclick="nextMoodImage(this)">›</button>
+                    </div>
+                    <div class="carousel-indicators">
+                        <span class="indicator active"></span>
+                        <span class="indicator"></span>
+                        <span class="indicator"></span>
+                        <span class="indicator"></span>
+                    </div>
+                </div>
+
+                <div class="mood-foods">
+                    <div class="food-tag">🥛 Milk, Curd, Paneer, Eggs, Soy (Protein + Tryptophan)</div>
+                    <div class="food-tag">🍄 Mushrooms (Vitamin D)</div>
+                    <div class="food-tag">🌱 Spinach, Methi, Moong dal, Whole wheat (B-vitamins)</div>
+                    <div class="food-tag">🍌 Banana (Serotonin booster)</div>
+                    <div class="food-tag">🍍 Papaya, 🍎 Guava, 🍓 Strawberries (Antioxidants)</div>
+                    <div class="food-tag">🌰 Groundnuts, Sesame, Flax seeds (Healthy fats)</div>
+                </div>
+                <p class="mood-avoid">⚡ Avoid: maida foods, packaged snacks.</p>
+            </div>
+
+            <!-- Fatigue / Exhaustion -->
+            <div class="mood-card">
+                <div class="mood-icon">💤</div>
+                <h3>Fatigue / Exhaustion</h3>
+                <p class="mood-nutrients">Key Nutrients: Iron, Vitamin C, B12, Protein</p>
+
+                <div class="mood-carousel">
+                    <div class="carousel-container">
+                        <img src="https://i.pinimg.com/736x/5a/bf/f7/5abff7c5a97780e168a397306ee52ed7.jpg" alt="tired" class="mood-image">
+                        <img src="https://images.pexels.com/photos/2255935/pexels-photo-2255935.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Spinach for iron" class="mood-image active">
+                        <img src="https://images.pexels.com/photos/1327838/pexels-photo-1327838.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Beetroot for iron" class="mood-image">
+                        <img src="https://images.pexels.com/photos/1327838/pexels-photo-1327838.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Sprouts for protein" class="mood-image">
+                    </div>
+                    <div class="carousel-nav">
+                        <button class="carousel-btn prev" onclick="prevMoodImage(this)">‹</button>
+                        <button class="carousel-btn next" onclick="nextMoodImage(this)">›</button>
+                    </div>
+                    <div class="carousel-indicators">
+                        <span class="indicator active"></span>
+                        <span class="indicator"></span>
+                        <span class="indicator"></span>
+                        <span class="indicator"></span>
+                    </div>
+                </div>
+
+                <div class="mood-foods">
+                    <div class="food-tag">🥬 Spinach, Beetroot (Iron)</div>
+                    <div class="food-tag">🍋 Lemon, 🍊 Amla, 🍅 Tomato (Vitamin C)</div>
+                    <div class="food-tag">🌱 Black chana, Rajma, Bajra, Ragi (Iron + protein)</div>
+                    <div class="food-tag">🌱 Sprouts (Energizing proteins)</div>
+                    <div class="food-tag">🥛 Milk, Paneer, Eggs, Fish (B12 + protein)</div>
+                    <div class="food-tag">💧 Nimbu paani, Buttermilk, Coconut water (Hydration)</div>
+                </div>
+                <p class="mood-avoid">⚡ Avoid: energy drinks, excess tea/coffee.</p>
+            </div>
+
+            <!-- Anger / Frustration -->
+            <div class="mood-card">
+                <div class="mood-icon">😡</div>
+                <h3>Anger / Frustration</h3>
+                <p class="mood-nutrients">Key Nutrients: Magnesium, Omega-3, Cooling Hydration</p>
+
+                <div class="mood-carousel">
+                    <div class="carousel-container">
+                        <img src="https://i.pinimg.com/1200x/25/b7/e1/25b7e1901313188f818debdd03c6681d.jpg" alt="Angry" class="mood-image">
+                        <img src="https://images.pexels.com/photos/2329440/pexels-photo-2329440.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Cucumber for cooling" class="mood-image active">
+                        <img src="https://images.pexels.com/photos/1327838/pexels-photo-1327838.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Mint for soothing" class="mood-image">
+                        <img src="https://images.pexels.com/photos/1327838/pexels-photo-1327838.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Bottle gourd" class="mood-image">
+                    </div>
+                    <div class="carousel-nav">
+                        <button class="carousel-btn prev" onclick="prevMoodImage(this)">‹</button>
+                        <button class="carousel-btn next" onclick="nextMoodImage(this)">›</button>
+                    </div>
+                    <div class="carousel-indicators">
+                        <span class="indicator active"></span>
+                        <span class="indicator"></span>
+                        <span class="indicator"></span>
+                        <span class="indicator"></span>
+                    </div>
+                </div>
+
+                <div class="mood-foods">
+                    <div class="food-tag">🥒 Cucumber, 🍉 Watermelon, 🥒 Bottle gourd (Cooling)</div>
+                    <div class="food-tag">🌱 Mint, Fennel (Soothing herbs)</div>
+                    <div class="food-tag">🥬 Spinach, Pumpkin seeds (Magnesium)</div>
+                    <div class="food-tag">🌾 Flax seeds, Walnuts (Omega-3)</div>
+                    <div class="food-tag">🍫 Dark chocolate (Mood stabilizer)</div>
+                </div>
+                <p class="mood-avoid">⚡ Avoid: spicy/oily fried food, alcohol, namkeen.</p>
+            </div>
+
+            <!-- Boredom / Emptiness -->
+            <div class="mood-card">
+                <div class="mood-icon">😶</div>
+                <h3>Boredom / Emptiness</h3>
+                <p class="mood-nutrients">Key Nutrients: Fiber, Antioxidants, Protein, Probiotics</p>
+
+                <div class="mood-carousel">
+                    <div class="carousel-container">
+                        <img src="https://i.pinimg.com/736x/fc/f9/c1/fcf9c1e0080ac4e66771c4de67c91a66.jpg" alt="Bore" class="mood-image">
+                        <img src="https://images.pexels.com/photos/143133/pexels-photo-143133.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Carrot sticks" class="mood-image active">
+                        <img src="https://images.pexels.com/photos/547263/pexels-photo-547263.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Roasted corn" class="mood-image">
+                        <img src="https://images.pexels.com/photos/1327838/pexels-photo-1327838.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Sprouts chaat" class="mood-image">
+                    </div>
+                    <div class="carousel-nav">
+                        <button class="carousel-btn prev" onclick="prevMoodImage(this)">‹</button>
+                        <button class="carousel-btn next" onclick="nextMoodImage(this)">›</button>
+                    </div>
+                    <div class="carousel-indicators">
+                        <span class="indicator active"></span>
+                        <span class="indicator"></span>
+                        <span class="indicator"></span>
+                        <span class="indicator"></span>
+                    </div>
+                </div>
+
+                <div class="mood-foods">
+                    <div class="food-tag">🌰 Roasted Chana, Makhana, Peanuts (Crunchy protein)</div>
+                    <div class="food-tag">🥕 Cucumber & Carrot sticks (Fiber + hydration)</div>
+                    <div class="food-tag">🍌 Banana, 🍎 Apple, 🍊 Seasonal fruits (Antioxidants)</div>
+                    <div class="food-tag">🌱 Sprouts chaat, Paneer cubes, Dhokla (Protein + probiotics)</div>
+                    <div class="food-tag">🌽 Roasted corn (Fiber)</div>
+                    <div class="food-tag">🥣 Idli, Dosa, Kanji (Gut-friendly probiotics)</div>
+                </div>
+                <p class="mood-avoid">⚡ Avoid: packaged chips, biscuits, soft drinks.</p>
+            </div>
+
+            <!-- Happy & Energetic -->
+            <div class="mood-card">
+                <div class="mood-icon">😃</div>
+                <h3>Happy & Energetic</h3>
+                <p class="mood-nutrients">Key Nutrients: Complex Carbs, B-vitamins, Omega-3s, Magnesium, Natural Sugars</p>
+
+                <div class="mood-carousel">
+                    <div class="carousel-container">
+                        <img src="https://i.pinimg.com/736x/fd/bb/97/fdbb97cc757b34c765d4dc58d5f253b4.jpg" alt="Sweet potato" class="mood-image">
+                        <img src="https://images.pexels.com/photos/5945881/pexels-photo-5945881.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Banana with peanut butter" class="mood-image active">
+                        <img src="https://images.pexels.com/photos/102104/pexels-photo-102104.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Almonds & walnuts" class="mood-image">
+                        <img src="https://images.pexels.com/photos/691152/pexels-photo-691152.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Dark chocolate" class="mood-image">
+                    </div>
+                    <div class="carousel-nav">
+                        <button class="carousel-btn prev" onclick="prevMoodImage(this)">‹</button>
+                        <button class="carousel-btn next" onclick="nextMoodImage(this)">›</button>
+                    </div>
+                    <div class="carousel-indicators">
+                        <span class="indicator active"></span>
+                        <span class="indicator"></span>
+                        <span class="indicator"></span>
+                        <span class="indicator"></span>
+                    </div>
+                </div>
+
+                <div class="mood-foods">
+                    <div class="food-tag">🍠 Sweet potato / Oats (Complex carbs)</div>
+                    <div class="food-tag">🍌 Banana + Peanut butter (Natural sugars + protein)</div>
+                    <div class="food-tag">🥜 Almonds, Walnuts, Chia (Omega-3s)</div>
+                    <div class="food-tag">🍫 Dark chocolate (Magnesium + mood boost)</div>
+                    <div class="food-tag">🥤 Smoothies (Antioxidants + probiotics)</div>
+                    <div class="food-tag">🍊 Citrus fruits & Berries (Vitamin C)</div>
+                </div>
+                <p class="mood-avoid">⚡ Avoid: excess caffeine, refined sugar, fried junk.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Smart Dashboard Section -->
+    <section id="dashboard" class="smart-dashboard">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">📊 Smart Dashboard (IoT + ESP32)</h2>
+                <p class="section-subtitle">Technology meets Farming - Real-time monitoring for optimal growth</p>
+                <div class="dashboard-cta">
+                    <button class="btn btn-primary" onclick="showComingSoon()">Get Smart Dashboard</button>
+                </div>
+            </div>
+            
+            <div class="dashboard-content">
+                <div class="dashboard-overview">
+                    <div class="overview-card">
+                        <div class="overview-icon">🌡️</div>
+                        <h3>Temperature Control</h3>
+                        <div class="sensor-value">
+                            <span class="value" id="temperature">24.5</span>
+                            <span class="unit">°C</span>
+                        </div>
+                        <div class="status-indicator optimal">Optimal</div>
+                    </div>
+                    
+                    <div class="overview-card">
+                        <div class="overview-icon">💧</div>
+                        <h3>Humidity Level</h3>
+                        <div class="sensor-value">
+                            <span class="value" id="humidity">65</span>
+                            <span class="unit">%</span>
+                        </div>
+                        <div class="status-indicator good">Good</div>
+                    </div>
+                    
+                    <div class="overview-card">
+                        <div class="overview-icon">🧪</div>
+                        <h3>pH Level</h3>
+                        <div class="sensor-value">
+                            <span class="value" id="ph">6.8</span>
+                            <span class="unit">pH</span>
+                        </div>
+                        <div class="status-indicator optimal">Optimal</div>
+                    </div>
+                    
+                    <div class="overview-card">
+                        <div class="overview-icon">🌱</div>
+                        <h3>Soil Moisture</h3>
+                        <div class="sensor-value">
+                            <span class="value" id="moisture">78</span>
+                            <span class="unit">%</span>
+                        </div>
+                        <div class="status-indicator good">Good</div>
+                    </div>
+                </div>
+                
+                <div class="dashboard-features">
+                    <div class="feature-section">
+                        <h3>🔗 ESP32 Connection Status</h3>
+                        <div class="connection-status">
+                            <div class="status-dot connected"></div>
+                            <span>Connected to 3 devices</span>
+                        </div>
+                        <div class="device-list">
+                            <div class="device-item">
+                                <span class="device-name">Rooftop Garden #1</span>
+                                <span class="device-status online">Online</span>
+                            </div>
+                            <div class="device-item">
+                                <span class="device-name">Hydroponic System</span>
+                                <span class="device-status online">Online</span>
+                            </div>
+                            <div class="device-item">
+                                <span class="device-name">Balcony Sensors</span>
+                                <span class="device-status online">Online</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-section">
+                        <h3>🚨 Automated Alerts</h3>
+                        <div class="alert-list">
+                            <div class="alert-item success">
+                                <i class="fas fa-check-circle"></i>
+                                <span>All systems operating normally</span>
+                            </div>
+                            <div class="alert-item info">
+                                <i class="fas fa-info-circle"></i>
+                                <span>Watering scheduled in 2 hours</span>
+                            </div>
+                            <div class="alert-item warning">
+                                <i class="fas fa-exclamation-triangle"></i>
+                                <span>pH slightly high in System #2</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-section">
+                        <h3>📈 Data Analytics</h3>
+                        <div class="analytics-summary">
+                            <div class="metric">
+                                <span class="metric-label">Water Saved</span>
+                                <span class="metric-value">847L</span>
+                                <span class="metric-period">this month</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">Energy Efficiency</span>
+                                <span class="metric-value">92%</span>
+                                <span class="metric-period">average</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">Crop Yield</span>
+                                <span class="metric-value">+23%</span>
+                                <span class="metric-period">vs traditional</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="dashboard-description">
+                    <h3>How Smart Dashboard Works</h3>
+                    <div class="description-grid">
+                        <div class="description-item">
+                            <div class="desc-icon">📡</div>
+                            <h4>Real-time Monitoring</h4>
+                            <p>Smart sensors monitor pH, water levels, temperature, and lighting conditions 24/7</p>
+                        </div>
+                        <div class="description-item">
+                            <div class="desc-icon">🤖</div>
+                            <h4>AI-Powered Insights</h4>
+                            <p>ESP32-powered dashboard provides real-time data on plant health with predictive analytics</p>
+                        </div>
+                        <div class="description-item">
+                            <div class="desc-icon">⚙️</div>
+                            <h4>Automatic Adjustments</h4>
+                            <p>Automatic adjustments for optimal growth → no guesswork needed</p>
+                        </div>
+                        <div class="description-item">
+                            <div class="desc-icon">📊</div>
+                            <h4>Transparency & Efficiency</h4>
+                            <p>Complete transparency in farming operations with maximum efficiency for smarter urban farming</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Green Credits Section -->
+    <section id="credits" class="green-credits">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">💚 Green Credits System</h2>
+                <p class="section-subtitle">Grow More, Earn More. Every contribution earns you green credits that can be exchanged for rewards and community benefits.</p>
+            </div>
+            
+            <div class="credits-content">
+                <div class="user-profile">
+                    <div class="profile-card">
+                        <div class="profile-avatar">🌱</div>
+                        <div class="profile-info">
+                            <h3>John Doe</h3>
+                            <p class="user-level">Eco Warrior</p>
+                            <div class="credits-balance">
+                                <span class="credits-amount">1,247</span>
+                                <span class="credits-label">Green Credits</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="level-progress">
+                        <div class="level-info">
+                            <span class="current-level">Level 4: Eco Warrior</span>
+                            <span class="next-level">Next: Garden Master (1,500 credits)</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 83%"></div>
+                        </div>
+                        <div class="progress-text">1,247 / 1,500 credits</div>
+                    </div>
+                </div>
+                
+                <div class="credits-system">
+                    <div class="earning-section">
+                        <h3>🌱 Earn Green Credits</h3>
+                        <div class="earning-grid">
+                            <div class="earning-item">
+                                <div class="earning-icon">💧</div>
+                                <div class="earning-info">
+                                    <h4>Watering Plants</h4>
+                                    <p>Daily care and maintenance</p>
+                                </div>
+                                <div class="earning-credits">+2 credits</div>
+                            </div>
+                            
+                            <div class="earning-item">
+                                <div class="earning-icon">🌱</div>
+                                <div class="earning-info">
+                                    <h4>Planting Seeds</h4>
+                                    <p>Starting new crops</p>
+                                </div>
+                                <div class="earning-credits">+5 credits</div>
+                            </div>
+                            
+                            <div class="earning-item">
+                                <div class="earning-icon">🌾</div>
+                                <div class="earning-info">
+                                    <h4>Harvesting Crops</h4>
+                                    <p>Successful crop completion</p>
+                                </div>
+                                <div class="earning-credits">+10 credits</div>
+                            </div>
+                            
+                            <div class="earning-item">
+                                <div class="earning-icon">👥</div>
+                                <div class="earning-info">
+                                    <h4>Community Help</h4>
+                                    <p>Helping other farmers</p>
+                                </div>
+                                <div class="earning-credits">+8 credits</div>
+                            </div>
+                            
+                            <div class="earning-item">
+                                <div class="earning-icon">📚</div>
+                                <div class="earning-info">
+                                    <h4>Knowledge Sharing</h4>
+                                    <p>Teaching and mentoring</p>
+                                </div>
+                                <div class="earning-credits">+15 credits</div>
+                            </div>
+                            
+                            <div class="earning-item">
+                                <div class="earning-icon">🌍</div>
+                                <div class="earning-info">
+                                    <h4>Eco Initiatives</h4>
+                                    <p>Environmental projects</p>
+                                </div>
+                                <div class="earning-credits">+20 credits</div>
+                            </div>
+                            
+                            <div class="earning-item">
+                                <div class="earning-icon">🏆</div>
+                                <div class="earning-info">
+                                    <h4>Competitions</h4>
+                                    <p>Winning farming challenges</p>
+                                </div>
+                                <div class="earning-credits">+25 credits</div>
+                            </div>
+                            
+                            <div class="earning-item">
+                                <div class="earning-icon">📱</div>
+                                <div class="earning-info">
+                                    <h4>App Engagement</h4>
+                                    <p>Daily login and activity</p>
+                                </div>
+                                <div class="earning-credits">+3 credits</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="spending-section">
+                        <h3>🛒 Spend Your Credits</h3>
+                        <div class="spending-grid">
+                            <div class="spending-item">
+                                <div class="spending-icon">🌱</div>
+                                <div class="spending-info">
+                                    <h4>Seed Packets</h4>
+                                    <p>Premium organic seeds</p>
+                                </div>
+                                <div class="spending-cost">50 credits</div>
+                            </div>
+                            
+                            <div class="spending-item">
+                                <div class="spending-icon">🛠️</div>
+                                <div class="spending-info">
+                                    <h4>Garden Tools</h4>
+                                    <p>Quality farming equipment</p>
+                                </div>
+                                <div class="spending-cost">150 credits</div>
+                            </div>
+                            
+                            <div class="spending-item">
+                                <div class="spending-icon">💧</div>
+                                <div class="spending-info">
+                                    <h4>Hydroponic Kit</h4>
+                                    <p>Complete growing system</p>
+                                </div>
+                                <div class="spending-cost">500 credits</div>
+                            </div>
+                            
+                            <div class="spending-item">
+                                <div class="spending-icon">🏆</div>
+                                <div class="spending-info">
+                                    <h4>Premium Features</h4>
+                                    <p>Advanced app features</p>
+                                </div>
+                                <div class="spending-cost">200 credits</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="levels-section">
+                        <h3>🏅 User Levels</h3>
+                        <div class="levels-grid">
+                            <div class="level-item completed">
+                                <div class="level-badge">🌱</div>
+                                <div class="level-info">
+                                    <h4>Seedling</h4>
+                                    <p>0 - 100 credits</p>
+                                </div>
+                            </div>
+                            
+                            <div class="level-item completed">
+                                <div class="level-badge">🌿</div>
+                                <div class="level-info">
+                                    <h4>Sprout</h4>
+                                    <p>100 - 300 credits</p>
+                                </div>
+                            </div>
+                            
+                            <div class="level-item completed">
+                                <div class="level-badge">🌾</div>
+                                <div class="level-info">
+                                    <h4>Green Thumb</h4>
+                                    <p>300 - 600 credits</p>
+                                </div>
+                            </div>
+                            
+                            <div class="level-item current">
+                                <div class="level-badge">🌍</div>
+                                <div class="level-info">
+                                    <h4>Eco Warrior</h4>
+                                    <p>600 - 1,500 credits</p>
+                                </div>
+                            </div>
+                            
+                            <div class="level-item">
+                                <div class="level-badge">🏆</div>
+                                <div class="level-info">
+                                    <h4>Garden Master</h4>
+                                    <p>1,500 - 3,000 credits</p>
+                                </div>
+                            </div>
+                            
+                            <div class="level-item">
+                                <div class="level-badge">👑</div>
+                                <div class="level-info">
+                                    <h4>AgriMaster</h4>
+                                    <p>3,000 - 5,000 credits</p>
+                                </div>
+                            </div>
+                            
+                            <div class="level-item">
+                                <div class="level-badge">🌟</div>
+                                <div class="level-info">
+                                    <h4>EcoLegend</h4>
+                                    <p>5,000+ credits</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="benefits-section">
+                        <h3>🎁 Community Benefits</h3>
+                        <div class="benefits-list">
+                            <div class="benefit-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>Access to premium garden workshops</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-calendar-check"></i>
+                                <span>Priority booking for community plots</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-seedling"></i>
+                                <span>Exclusive access to rare seed varieties</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-users"></i>
+                                <span>VIP community events and meetups</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="why-credits">
+                        <h3>Why Green Credits Work</h3>
+                        <div class="reasons-grid">
+                            <div class="reason-item">
+                                <div class="reason-icon">🎯</div>
+                                <h4>Encourages Participation</h4>
+                                <p>Motivates community members to contribute actively to urban farming initiatives</p>
+                            </div>
+                            <div class="reason-item">
+                                <div class="reason-icon">🤝</div>
+                                <h4>Builds Community</h4>
+                                <p>Creates stronger bonds through shared goals and mutual support</p>
+                            </div>
+                            <div class="reason-item">
+                                <div class="reason-icon">🌱</div>
+                                <h4>Rewards Responsibility</h4>
+                                <p>Recognizes and rewards eco-friendly habits and sustainable practices</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Movement Section -->
+    <section class="join-movement">
+        <div class="container">
+            <div class="movement-content">
+                <h2>🌱 Join the Movement</h2>
+                <p class="movement-description">
+                    Farming is no longer limited to villages. With Urban Roots, every balcony, rooftop, and community can become a farm.
+                </p>
+                <div class="movement-buttons">
+                    <button class="btn btn-primary" onclick="openUrbanFarmModal()">
+                        <i class="fas fa-seedling"></i>
+                        Start Your Urban Farm
+                    </button>
+                    <button class="btn btn-secondary" onclick="showComingSoon()">
+                        <i class="fas fa-users"></i>
+                        Join Community Gardens
+                    </button>
+                    <button class="btn btn-outline" onclick="showComingSoon()">
+                        <i class="fas fa-flask"></i>
+                        Get Hydroponics Kit
+                    </button>
+                    <button class="btn btn-outline" onclick="showComingSoon()">
+                        <i class="fas fa-wind"></i>
+                        Get Aeroponics Kit
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">❓ Frequently Asked Questions</h2>
+                <p class="section-subtitle">Everything you need to know about urban farming</p>
+            </div>
+            
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>What is urban farming?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Urban farming is the practice of growing food in cities and towns. It can include small gardens, rooftop farms, vertical farming, hydroponics, and community gardens, allowing fresh produce to be grown close to where people live.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Why is urban farming important?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Urban farming improves food security, reduces the carbon footprint from transporting food, provides fresh and healthy produce, promotes green spaces, and can build community engagement.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Can I start urban farming if I have no backyard?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! Urban farming can be done in small spaces like balconies, rooftops, or even indoors using containers, vertical gardens, or hydroponic systems.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>What types of plants can I grow in an urban farm?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can grow vegetables (like tomatoes, lettuce, spinach), herbs (like basil, mint, coriander), fruits (like strawberries, dwarf citrus), and even edible flowers depending on the space and sunlight available.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>How much maintenance does urban farming require?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>It depends on the method you choose. Container gardening and hydroponics need regular watering and nutrient management, while community or rooftop gardens may require more consistent attention.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Can I make money from urban farming?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! Many urban farmers sell fresh produce, herbs, microgreens, or value-added products like jams and sauces at local markets or through online delivery.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Is urban farming environmentally friendly?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely. It reduces food transportation emissions, promotes recycling of organic waste, and can conserve water through methods like drip irrigation and hydroponics.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>How does your website help with urban farming?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our platform provides resources, guides, and tools to help beginners and experienced urban farmers plan, manage, and track their gardens effectively. We also offer tips, community support, and ways to share your progress.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Do I need special equipment to start urban farming?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Not necessarily. Beginners can start with basic pots, soil, seeds, and water. Advanced methods like hydroponics or vertical farming may require additional equipment, but they are optional.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>How can I join the urban farming community?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can connect through local community gardens, social media groups, workshops, or through the forums and discussion boards on our website.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">📞 Contact Us</h2>
+                <p class="section-subtitle">Get in touch with our urban farming experts</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>hello@agrixplorers.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p>+91-XXXXXXXXXX</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div class="contact-details">
+                            <h3>Follow Us</h3>
+                            <div class="social-links">
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-instagram"></i>
+                                    Instagram
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-youtube"></i>
+                                    YouTube
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-linkedin"></i>
+                                    LinkedIn
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Your Phone">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="brand">
+                        <span class="brand-icon">🌿</span>
+                        <span class="brand-text">AgriXplorers</span>
+                    </div>
+                    <p>Fresh by Nature. Urban by Design.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#services">Community Gardens</a></li>
+                            <li><a href="#services">Hydroponics</a></li>
+                            <li><a href="#services">Vertical Farming</a></li>
+                            <li><a href="#services">Aeroponics</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#calendar">Farm Calendar</a></li>
+                            <li><a href="#health">Health Solutions</a></li>
+                            <li><a href="#mood">Mood Food</a></li>
+                            <li><a href="#dashboard">Smart Dashboard</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Community</h4>
+                        <ul>
+                            <li><a href="#credits">Green Credits</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AgriXplorers. All rights reserved. Growing cities, one plant at a time. 🌱</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>🌿 Join the Community</h2>
+                <span class="close" onclick="closeModal('loginModal')">&times;</span>
+            </div>
+            <div class="modal-body">
+                <form class="login-form">
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Phone</label>
+                        <input type="tel" placeholder="Enter your phone number" required>
+                    </div>
+                    <div class="form-group">
+                        <label>City</label>
+                        <input type="text" placeholder="Enter your city" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Interest</label>
+                        <select required>
+                            <option value="">Select your interest</option>
+                            <option value="community">Community Gardens</option>
+                            <option value="home">Home Farming</option>
+                            <option value="hydroponics">Hydroponics</option>
+                            <option value="business">AgriPreneurship</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-user-plus"></i>
+                        Join Community
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Urban Farm Modal -->
+    <div id="urbanFarmModal" class="modal">
+        <div class="modal-content large">
+            <div class="modal-header">
+                <h2>🌱 Start Your Urban Farm</h2>
+                <span class="close" onclick="closeModal('urbanFarmModal')">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="farm-wizard">
+                    <div class="wizard-steps">
+                        <div class="step active">
+                            <div class="step-number">1</div>
+                            <div class="step-title">Basic Info</div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-title">Space Details</div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-title">Your Plan</div>
+                        </div>
+                    </div>
+                    
+                    <div class="wizard-content">
+                        <div class="step-content active" id="step1">
+                            <h3>Tell us about yourself</h3>
+                            <form class="farm-form">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label>Name</label>
+                                        <input type="text" id="userName" placeholder="Your name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Email</label>
+                                        <input type="email" id="userEmail" placeholder="Your email" required>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label>City</label>
+                                        <input type="text" id="userCity" placeholder="Your city" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Phone</label>
+                                        <input type="tel" id="userPhone" placeholder="Your phone" required>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-primary" onclick="nextStep()">
+                                    Next Step
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </form>
+                        </div>
+                        
+                        <div class="step-content" id="step2">
+                            <h3>Space & Crop Selection</h3>
+                            <form class="farm-form">
+                                <div class="form-group">
+                                    <label>Space Type</label>
+                                    <select id="spaceType" required onchange="updateSpaceInfo()">
+                                        <option value="">Select your space type</option>
+                                        <option value="balcony">Balcony (5-30 sq ft)</option>
+                                        <option value="rooftop">Rooftop (30-200 sq ft)</option>
+                                        <option value="kitchen">Kitchen Garden (flexible size)</option>
+                                        <option value="hydroponics">Indoor Hydroponics</option>
+                                        <option value="aeroponics">Indoor Aeroponics</option>
+                                        <option value="community">Community Garden</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Approximate Space (sq ft)</label>
+                                    <input type="number" id="spaceSize" placeholder="e.g., 10" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Preferred Crop</label>
+                                    <select id="cropType" required>
+                                        <option value="">Select a crop to grow</option>
+                                        <option value="spinach">Spinach</option>
+                                        <option value="tomato">Tomato</option>
+                                        <option value="lettuce">Lettuce</option>
+                                        <option value="herbs">Mixed Herbs</option>
+                                        <option value="strawberry">Strawberry</option>
+                                        <option value="mixed">Mixed Vegetables</option>
+                                    </select>
+                                </div>
+                                <div class="form-buttons">
+                                    <button type="button" class="btn btn-outline" onclick="prevStep()">
+                                        <i class="fas fa-arrow-left"></i>
+                                        Previous
+                                    </button>
+                                    <button type="button" class="btn btn-primary" onclick="generatePlan()">
+                                        Generate Plan
+                                        <i class="fas fa-magic"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        
+                        <div class="step-content" id="step3">
+                            <h3>Your Personalized Farm Plan</h3>
+                            <div id="farmPlan" class="farm-plan">
+                                <!-- Plan will be generated here -->
+                            </div>
+                            <div class="form-buttons">
+                                <button type="button" class="btn btn-outline" onclick="prevStep()">
+                                    <i class="fas fa-arrow-left"></i>
+                                    Back to Edit
+                                </button>
+                                <button type="button" class="btn btn-primary" onclick="downloadPlan()">
+                                    <i class="fas fa-download"></i>
+                                    Download Plan
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Service Modal -->
+    <div id="serviceModal" class="modal">
+        <div class="modal-content large">
+            <div class="modal-header">
+                <h2 id="serviceModalTitle">Service Details</h2>
+                <span class="close" onclick="closeModal('serviceModal')">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div id="serviceModalContent">
+                    <!-- Service content will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Crop Modal -->
+    <div id="cropModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="cropModalTitle">Crop Details</h2>
+                <span class="close" onclick="closeModal('cropModal')">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div id="cropModalContent">
+                    <!-- Crop content will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Coming Soon Alert -->
+    <div id="comingSoonAlert" class="alert-overlay">
+        <div class="alert-content">
+            <div class="alert-icon">🚀</div>
+            <h3>Coming Soon!</h3>
+            <p>This feature is currently under development. Stay tuned for updates!</p>
+            <button class="btn btn-primary" onclick="closeComingSoon()">Got it!</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
