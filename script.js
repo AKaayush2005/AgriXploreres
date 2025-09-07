@@ -2,6 +2,9 @@
 let currentStep = 1;
 let carouselIntervals = new Map();
 
+// Global timing constant (ms) -- change this to adjust all carousel timings
+const CAROUSEL_INTERVAL_MS = 3000;
+
 // DOM Content Loaded
 document.addEventListener('DOMContentLoaded', function() {
     initializeWebsite();
@@ -76,13 +79,13 @@ function initializeCarousels() {
             const interval = setInterval(() => {
                 currentIndex = (currentIndex + 1) % images.length;
                 showImage(carousel, currentIndex);
-            }, 3000);
+            }, CAROUSEL_INTERVAL_MS);
             
             carouselIntervals.set(carousel, interval);
             
             // Pause on hover
             carousel.addEventListener('mouseenter', () => {
-                clearInterval(carouselIntervals.get(carousel));
+                const _id = carouselIntervals.get(carousel); if (_id) clearInterval(_id);
             });
             
             // Resume on mouse leave
@@ -90,7 +93,7 @@ function initializeCarousels() {
                 const newInterval = setInterval(() => {
                     currentIndex = (currentIndex + 1) % images.length;
                     showImage(carousel, currentIndex);
-                }, 3000);
+                }, CAROUSEL_INTERVAL_MS);
                 carouselIntervals.set(carousel, newInterval);
             });
             
@@ -120,16 +123,22 @@ function showImage(carousel, index) {
 
 function nextImage(button) {
     const carousel = button.closest('.crop-carousel, .health-carousel, .mood-carousel');
+    if (!carousel) return;
     const images = carousel.querySelectorAll('.crop-image, .health-image, .mood-image');
-    const currentIndex = Array.from(images).findIndex(img => img.classList.contains('active'));
+    if (!images || images.length === 0) return;
+    let currentIndex = Array.from(images).findIndex(img => img.classList.contains('active'));
+    if (currentIndex === -1) currentIndex = 0;
     const nextIndex = (currentIndex + 1) % images.length;
     showImage(carousel, nextIndex);
 }
 
 function prevImage(button) {
     const carousel = button.closest('.crop-carousel, .health-carousel, .mood-carousel');
+    if (!carousel) return;
     const images = carousel.querySelectorAll('.crop-image, .health-image, .mood-image');
-    const currentIndex = Array.from(images).findIndex(img => img.classList.contains('active'));
+    if (!images || images.length === 0) return;
+    let currentIndex = Array.from(images).findIndex(img => img.classList.contains('active'));
+    if (currentIndex === -1) currentIndex = 0;
     const prevIndex = (currentIndex - 1 + images.length) % images.length;
     showImage(carousel, prevIndex);
 }
@@ -1575,14 +1584,14 @@ function initializeServiceModalCarousel() {
     const interval = setInterval(() => {
         currentIndex = (currentIndex + 1) % images.length;
         showServiceModalImage(currentIndex);
-    }, 3000);
+    }, CAROUSEL_INTERVAL_MS);
     
     // Store interval for cleanup
     carousel.carouselInterval = interval;
     
     // Pause on hover
     carousel.addEventListener('mouseenter', () => {
-        clearInterval(carousel.carouselInterval);
+        if (carousel.carouselInterval) clearInterval(carousel.carouselInterval);
     });
     
     // Resume on mouse leave
@@ -1590,7 +1599,7 @@ function initializeServiceModalCarousel() {
         const newInterval = setInterval(() => {
             currentIndex = (currentIndex + 1) % images.length;
             showServiceModalImage(currentIndex);
-        }, 3000);
+        }, CAROUSEL_INTERVAL_MS);
         carousel.carouselInterval = newInterval;
     });
 }
@@ -1630,3 +1639,10 @@ function prevServiceImage(button) {
 function showServiceImage(indicator, index) {
     showServiceModalImage(index);
 }
+
+// Cleanup intervals on unload to avoid runaway timers
+window.addEventListener('beforeunload', () => {
+    carouselIntervals.forEach(id => { if (id) clearInterval(id); });
+    const svc = document.querySelector('.service-modal-carousel');
+    if (svc && svc.carouselInterval) clearInterval(svc.carouselInterval);
+});
