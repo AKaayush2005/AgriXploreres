@@ -227,7 +227,7 @@ body {
 /* Hero Section */
 .hero {
     padding: 120px 0 80px;
-        background: linear-gradient(135deg, var(--primary-color) 0%, var(--gray-50) 100%);
+        background: linear-gradient(135deg, var(--primary-color) 0%, var(--cyan-dark) 100%);
     position: relative;
     overflow: hidden;
 }
@@ -990,7 +990,8 @@ section {
 
 /* Health Solutions Section */
 .health-solutions {
-    background: var(--white);
+    /* background: var(--white); */
+ background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #fef3c7 100%);
 }
 
 .health-grid {
@@ -1064,7 +1065,7 @@ section {
 
 /* Mood Food Section */
 .mood-food {
-    background: var(--gray-50);
+    background: linear-gradient(135deg, #fef3c7 0%, #fed7aa 50%, #fce7f3 100%);
 }
 
 .mood-grid {
